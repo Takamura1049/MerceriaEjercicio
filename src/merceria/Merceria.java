@@ -13,11 +13,21 @@ import java.util.Scanner;
 public class Merceria {
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("-----------Merceria mayoritas------------");
-        System.out.println("¿Cuantos paquetes desea comprar?");
-        int cant = scan.nextInt();
+        int cant;
+        double montoTotal;
         double total;
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.println("-----------Merceria mayoritas------------");
+        
+        System.out.println("¿Cuantos paquetes desea comprar?");
+        cant = scan.nextInt();
+        
+        System.out.println("Ingrese el monto de la compra:");
+        scan = new Scanner(System.in);
+        montoTotal=scan.nextDouble();
+        
+        
         if (cant < 5) {
             if (cant < 0) {
                 System.out.println("No se admiten compras negativas");
